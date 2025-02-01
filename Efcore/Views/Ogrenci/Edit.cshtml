@@ -2,9 +2,10 @@
 @{
     ViewData["Title"] = "Create Page";
 }
-<h2>Öğrenci Ekle</h2>
+<h2>Öğrenci Güncelleme</h2>
 <hr>
-<form  asp-action="Create">
+<form  asp-action="Edit">
+    <input type="hidden" asp-for="OgrenciId">
     <div class="mb-3">
         <label asp-for="OgrenciAd"></label>
         <input asp-for="OgrenciAd" type="text"  class="form-control" />

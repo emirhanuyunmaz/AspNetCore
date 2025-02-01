@@ -10,5 +10,6 @@ namespace Efcore.Data
         public string? OgrenciSoyad { get; set; }
         public string? Email { get; set; }
         public string? Telefon { get; set; }
+        public ICollection<KursKayit> KursKayitlari { get; set; } = new List<KursKayit>();
     } 
 }

@@ -1,0 +1,14 @@
+@model Kurs
+@{
+    ViewData["title"] = "Create Kurs Page";
+}
+
+<h1>Kurs Ekleme Sayfası</h1>
+
+<form asp-controller="Kurs" asp-action="Create" method="POST" >
+    <div class="mb-3">       
+        <label asp-for="Baslik" class="form-label"></label>
+        <input asp-for="Baslik" class="form-control" placeholder="Kurs Adı">
+    </div>
+    <button type="submit" class="btn btn-secondary">Kaydet</button>
+</form>
